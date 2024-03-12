@@ -1,0 +1,18 @@
+<!--Shelley Bercy
+-->
+
+<!DOCTYPE html>
+
+
+    <body>
+        <h1>Get Top Movies by Year</h1>
+        <form action="{{url_for('topMovie')}}" method="POST">
+            <label for="year">Select Year:</label><br>
+            <input type="number" id="year" name="year" min="1930" max="2026" step="1"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <p><a href="/"> Back to Home</a></p>
+    </body>
+
+</html>

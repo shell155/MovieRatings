@@ -1,0 +1,26 @@
+<!--Shelley Bercy
+-->
+
+<!DOCTYPE html>
+
+<body>
+    <h1>Top Movies of {{year}}</h1>
+    <table border = 1>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Rating</th>
+        </tr>
+        {% for movie in top_movies %}
+        <tr>
+            <td>{{ movie["Title"] }}</td>
+            <td>{{ movie["Genre"] }}</td>
+            <td>{{ movie["Rating"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href = "/">Go back to home page</a>
+
+</body>
+
+</html>

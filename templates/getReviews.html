@@ -1,0 +1,17 @@
+<!--Shelley Bercy
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h1>Reviews of the Movies</h1>
+        <form action="{{url_for ('getReview')}}" method="POST">
+            <label> Genre: <input type="text" name="Genre" required></label><br>
+            
+            <button type="submit">submit</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </body>
+
+</html>

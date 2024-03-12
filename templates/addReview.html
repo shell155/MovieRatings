@@ -1,0 +1,44 @@
+<!--Shelley Bercy
+-->
+
+<!DOCTYPE html>
+
+<html>
+        <body>
+            
+            <h1>Submit a new Review</h1>
+            <form action="{{url_for('addReview')}}" method="POST">
+                <label for="username">your Username:</label><br>
+                <input type="text" name="Username"><br><br>
+                
+                <h2>Movie Information</h2>
+                <label for="Title">Title:</label><br>
+                <input type="text" name="Title"><br><br>
+                
+                <label for="Director">Director:</label><br>
+                <input type="text"  name="Director" ><br><br>
+                
+                <label for="Year">Year:</label><br>
+                <input type="text" name="Year" ><br><br>
+                
+                <label for="Genre">Genre:</label><br>
+                <input type="text" name="Genre" ><br><br>
+                
+
+                <h3>Your Review</h3>
+
+                <label for="Review">Review:</label><br>
+                <textarea type="text" name="Review" row="10" cols="50"></textarea><br><br>
+                
+
+                <label for="Rating">Rating:</label><br>
+                <input type="text" name="Rating" row="20" col="50" ><br><br>
+                
+                
+
+                <input type="submit" value="Submit">
+                <h4><a href="/"> Back to home </a></h4>
+            </form>
+        </body>
+
+</html>

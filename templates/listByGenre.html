@@ -1,0 +1,31 @@
+<!--Shelley Bercy
+
+-->
+
+<html>
+
+        <body>
+            <h1>Movie Reviews by {{genre}}</h1>
+            <table border = 1>
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Review</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+                {% for row in rows %}
+                <tr>
+                    <td>{{ row["Title"] }}</td>
+                    <td>{{ row["Director"] }}</td>
+                    <td>{{ row["Review"] }}</td>
+                    <td>{{ row["Rating"] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <a href = "/">Go back to home page</a>
+   
+        </body>
+
+</html>
